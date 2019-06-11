@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="pobeda.xsl"?>
+<simulation>
+	<cart>
+		<width>1.0</width>
+		<mass>1.0</mass>
+	</cart>
+	<pole>
+		<length>1.0</length>
+		<mass>1.0</mass>
+	</pole>
+	<ode>
+		<rad_speed_decr>0.5</rad_speed_decr>
+		<x_speed_decr>1.0</x_speed_decr>
+		<force_decr>1.0</force_decr>
+	</ode>
+	<sleeps>
+		<phys_simulator>15</phys_simulator>
+		<gen_algorithm>3500</gen_algorithm>
+		<sample>15</sample>
+	</sleeps>
+	<pid>
+		<kp>-97.641</kp>
+		<ki>-0.06965</ki>
+		<kd>-32.625</kd>
+		<force_max>50</force_max>
+		<force_min>-50</force_min>
+	</pid>
+	<percents>
+		<init_pid_perc>0.1</init_pid_perc>
+		<pid_perc>0.1</pid_perc>
+	</percents>
+	<count>11</count>
+	<pid_hz>900</pid_hz>
+</simulation>
